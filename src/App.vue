@@ -3,10 +3,16 @@
         <main>
             <v-content>
                 <v-container>
+                    <lib-ui-toolbar>
+                        <span slot="title">Testing</span>
+                    </lib-ui-toolbar>
                     <v-layout row wrap>
                         <lib-ui-thing>
                             <h1 slot="header">Test App</h1>
                             <lib-thing message="I am a test app."/>
+                            <template slot="actions">
+                                <lib-ui-render />
+                            </template>
                         </lib-ui-thing>
                     </v-layout>
                 </v-container>
@@ -17,6 +23,9 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {}
+  }
 }
 </script>

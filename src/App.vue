@@ -3,9 +3,10 @@
         <main>
             <v-content>
                 <v-container>
-                    <lib-ui-toolbar>
-                        <span slot="title">Testing</span>
-                    </lib-ui-toolbar>
+                    <!-- <lib-ui-toolbar> -->
+                    <!-- <span slot="title">Testing</span> -->
+                    <!-- </lib-ui-toolbar> -->
+                    <lib-ui-toolbar-plain></lib-ui-toolbar-plain>
                     <v-layout row wrap>
                         <lib-ui-thing>
                             <h1 slot="header">Test App</h1>
